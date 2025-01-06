@@ -8,15 +8,24 @@
    .flex-container{
      display: inline-flex;
      flex-direction: row;
-     flex-wrap: wrap-reverse;
+     flex-wrap: wrap;
      
      /* flex-flow:  row wrap; short hand for flex diieection and flex wrap */
+     justify-content: center;
+     align-items: stretch;
+     gap: 20px; /*   some gaps  on row and column */
    }
    .flex-item{
     order: 2;
-    flex-grow:2;
-    flex-shrink: 2;
+    flex-grow:4;
+    flex-shrink: 4;
     flex-basis: auto;
+    align-self: center;
+    /* visual stying*/
+    background-color: coral;
+    border: 2px dashed green;
+    padding: 20px;
+    text-align: center;
    }
   </style>
 </head>
@@ -31,5 +40,7 @@
     <div class="flex-item">Box 6</div>
 
   </div>
+
+
 </body>
 </html>
