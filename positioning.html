@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        height: 100vh;
+        background-color: black;
+        position: relative;
+      }
+      .next-page {
+        height: 200px;
+        background-color: blue;
+      }
+      .app {
+        background-color: white;
+        height: 50px;
+        width: 200px;
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50px);
+      }
+      .app:active {
+        transform: translateY(100px);
+      }
+      input {
+        width: 100px;
+        height: 20px;
+        background-color: white;
+        margin-top: 100px;
+        margin-left: 100px;
+        border: none;
+        border-radius: 5px;
+        padding-left: 5px;
+      }
+      input:focus {
+        /* background-color: black; */
+        outline: none;
+        transform: translateY(-10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app"></div>
+    </div>
+    <div class="next-page">
+      <input />
+    </div>
+  </body>
+</html>
