@@ -28,9 +28,29 @@
         font-size: 35px;
         padding: 20px;
         margin: 10px;
+        flex-grow: 1;
+        /*  we  gona use shorthnd property   */
       }
       .items-2 {
-        height: 150px;
+        order: 4;
+      }
+
+      .items-1 {
+        /* align-self: flex-start; */
+        order: 3;
+      }
+      .items-3 {
+        /* align-self: flex-start; */
+        order: 0;
+        flex-grow: 3;
+      }
+      .items-4 {
+        /* align-self: center; */
+        order: 1;
+      }
+      .items-5 {
+        /* align-self: flex-end; */
+        order: 2;
       }
     </style>
   </head>
