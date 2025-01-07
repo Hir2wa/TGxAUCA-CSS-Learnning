@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: antiquewhite;
+        padding: 10px;
+        /* margin is the outside space  padding is  the inside  space */
+        margin: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* works for a single  element  */
+        align-items: center;
+      }
+      .item {
+        /* for flexbos  we  focus on item how  they will fit in the our box  */
+        background-color: aqua;
+        color: white;
+        font-size: 35px;
+        padding: 20px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items-1 item">1</div>
+      <div class="items-2 item">2</div>
+      <div class="items-3 item">3</div>
+      <div class="items-4 item">4</div>
+      <div class="items-5 item">5</div>
+    </div>
+  </body>
+</html>
